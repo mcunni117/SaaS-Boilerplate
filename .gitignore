@@ -43,9 +43,44 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env
 
 # local folder
 local
 
 # vercel
 .vercel
+
+# ===========================================
+# SECURITY: Environment files and secrets
+# ===========================================
+# Environment files - CRITICAL SECURITY
+.env
+.env.*
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+.env.development
+.env.production
+
+# Secrets and credentials
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+credentials/
+config/secrets.json
+config/credentials.json
+
+# API Keys and tokens
+**/api-keys.json
+**/tokens.json
+**/secrets.json
+
+# Database credentials
+database.json
+db-config.json

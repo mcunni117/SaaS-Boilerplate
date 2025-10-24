@@ -23,6 +23,8 @@
     "storybook:serve": "http-server storybook-static --port 6006 --silent",
     "serve-storybook": "run-s storybook:*",
     "test-storybook:ci": "start-server-and-test serve-storybook http://127.0.0.1:6006 test-storybook",
+    "setup:env": "./scripts/setup-env.sh",
+    "security:check": "./scripts/pre-commit-security.sh",
     "prepare": "husky"
   },
   "dependencies": {
