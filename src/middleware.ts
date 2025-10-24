@@ -22,7 +22,7 @@ const isProtectedRoute = createRouteMatcher([
   '/:locale/api(.*)',
 ]);
 
-export default function middleware(
+export default async function middleware(
   request: NextRequest,
   event: NextFetchEvent,
 ) {
